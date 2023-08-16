@@ -16,8 +16,6 @@ The One-Click Go Decentralized plugin is a powerful tool that allows you to dece
 
 - **Customizable Styling**: Easily customize the appearance of the decentralized page and the "Open Decentralized Page" link to match your website's branding and design.
 
-- **GitHub Repository Support**: Host your decentralized web page on a GitHub repository, providing version control and collaboration capabilities.
-
 ## Installation
 
 1. Include the `d-web.js` file from a CDN in the `<head>` section of your web page.
