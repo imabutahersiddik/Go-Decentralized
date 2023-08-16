@@ -29,8 +29,8 @@ The One-Click Go Decentralized plugin is a powerful tool that allows you to dece
 2. Add the following HTML elements to your desired page or post where you want to display the decentralized page and the "Open Decentralized Page" link:
 
 ```html
-<div id="decentralized-page"></div>
-<a href="#" id="open-decentralized-page">Open Decentralized Page</a>
+<div id="encrypted-html"></div>
+<a href="#" id="d-web-link">Open Decentralized Page</a>
 ```
 
 3. Customize the CSS classes for the decentralized page and the "Open Decentralized Page" link to match your website's styling.
