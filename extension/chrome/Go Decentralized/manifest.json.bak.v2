@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Go Decentralized",
+  "description": "The One-Click Go Decentralized is a tool that allows you to decentralize any web pages in one-click.",
+  "version": "1.0.0",
+  "permissions": ["activeTab", "tabs"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js", "d-web.js"],
+      "css": ["content.css"],
+      "web_accessible_resources": [
+        {
+          "resources": ["content.js", "d-web.js"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["https://cdn.jsdelivr.net/gh/imabutahersiddik/decentralized-web@main/public/js/d-web.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'wasm-unsafe-eval' https://cdn.jsdelivr.net/gh/imabutahersiddik/decentralized-web@main/public/js/d-web.js; object-src 'self'"
+}
